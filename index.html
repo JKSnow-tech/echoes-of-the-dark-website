@@ -378,27 +378,33 @@
     });
     updateEmailDisplay();
 
-    /* Games Data */
+      /* Games Data */
     const games = [
+  {
+    title: "Echo's of the Dark",
+    description: "A first-person narrative-driven game set in a mysterious, abandoned asylum.",
+    cover: "assets/4c00e7a0-cb28-49c0-99ff-612858cc2ef6.jpg",
+    media: [
+      { type: "video", src: "assets/Echo's of the Dark.mp4" },
+      { type: "image", src: "assets/4c00e7a0-cb28-49c0-99ff-612858cc2ef6.jpg" }
+    ]
+  },
+  {
+    title: "The Last Lobby",
+    description: "A multiplayer survival zombie game set in a post-apocalyptic world.",
+    cover: "assets/WhatsApp Image 2025-08-12 at 11.55.25_34c7a758.jpg",
+    media: [
       {
-        title: 'Echo\'\s of the Dark',
-        description: 'A first-person narrative-driven game set in a mysterious, abandoned asylum.',
-        cover: 'assets/4c00e7a0-cb28-49c0-99ff-612858cc2ef6.jpg',
-        media: [
-          { type: 'video', src: '' },
-          { type: 'image', src: 'assets/4c00e7a0-cb28-49c0-99ff-612858cc2ef6.jpg' }
-        ]
+        type: "image",
+        src: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=60"
       },
       {
-        title: 'The Last Lobby',
-        description: 'A multiplayer survival zombie game set in a post-apocalyptic world.',
-        cover: 'assets/WhatsApp Image 2025-08-12 at 11.55.25_34c7a758.jpg',
-        media: [
-          { type: 'image', src: 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=60' },
-          { type: 'video', src: 'https://www.w3schools.com/html/movie.mp4' }
-        ]
-      },
-    ];
+        type: "video",
+        src: "https://www.w3schools.com/html/movie.mp4"
+      }
+    ]
+  }
+];
 
     /* Render games grid */
     function renderGrid(){
@@ -508,4 +514,5 @@
 
 </body>
 </html>
+
 
