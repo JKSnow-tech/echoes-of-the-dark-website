@@ -10,7 +10,6 @@
     content="57Game Studio and TPKGameDeveloper showcase atmospheric horror games and modern web development projects."
   />
 
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -35,26 +34,16 @@
     };
   </script>
 
-  <!-- Fonts -->
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  />
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Orbitron:wght@600;800&display=swap"
     rel="stylesheet"
   />
 
-  <!-- GSAP -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-  <!-- Three.js + Vanta -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
 
@@ -186,7 +175,6 @@
 </head>
 <body class="font-sans antialiased select-none bg-black">
 
-  <!-- NAVBAR -->
   <nav class="sticky top-0 z-40 bg-black/60 backdrop-blur border-b border-white/10">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
       <div class="flex items-center gap-3">
@@ -215,7 +203,6 @@
     </div>
   </nav>
 
-  <!-- HOME / INTRO -->
   <header
     id="home"
     class="relative min-h-[70vh] flex flex-col items-center justify-center px-6 text-center max-w-4xl mx-auto"
@@ -246,7 +233,6 @@
 
   <div class="divider my-12"></div>
 
-  <!-- 57GAME STUDIO SECTION -->
   <section id="studio" class="relative min-h-[80vh] px-6 pb-16 bg-black">
     <div id="vanta" class="absolute inset-0 -z-10"></div>
     <div class="relative max-w-7xl mx-auto">
@@ -262,7 +248,6 @@
 
   <div class="divider my-12"></div>
 
-  <!-- TPKGameDeveloper SECTION -->
   <section id="developer" class="py-16 px-6 bg-gradient-to-b from-black to-zinc-950">
     <div class="max-w-7xl mx-auto">
       <h2 class="font-display text-4xl mb-8 text-neon">TPKGameDeveloper — Web Development Projects</h2>
@@ -307,7 +292,6 @@
 
   <div class="divider my-12"></div>
 
-  <!-- ABOUT -->
   <section id="about" class="py-16 px-6 bg-black">
     <div class="max-w-5xl mx-auto text-center">
       <h2 class="font-display text-4xl mb-6 text-neon">About Us</h2>
@@ -326,7 +310,6 @@
 
   <div class="divider my-12"></div>
 
-  <!-- CONTACT -->
   <section id="contact" class="py-16 px-6 bg-black">
     <div class="max-w-5xl mx-auto text-center">
       <h2 class="font-display text-4xl mb-6 text-neon">Contact Us</h2>
@@ -410,7 +393,6 @@
     </div>
   </section>
 
-  <!-- MODAL -->
   <div id="modal" class="hidden fixed inset-0 bg-black/90 flex items-center justify-center z-50 px-4">
     <div class="bg-zinc-950 rounded-2xl overflow-hidden border border-white/10 shadow-xl max-w-3xl w-[92vw] relative flex flex-col max-h-[84vh]">
       <button
@@ -442,7 +424,6 @@
 
   <div class="divider my-12"></div>
 
-  <!-- PRIVACY POLICY SECTION -->
   <section id="privacy" class="py-16 px-6 bg-black">
     <div class="max-w-5xl mx-auto">
       <h2 class="font-display text-4xl mb-6 text-neon">
@@ -496,7 +477,7 @@
           rel="noopener noreferrer"
           class="text-neon underline"
         >
-          https://www.epicgames.com/site/en-US/privacypolicy
+          [https://www.epicgames.com/site/en-US/privacypolicy](https://www.epicgames.com/site/en-US/privacypolicy)
         </a>
       </p>
 
@@ -541,19 +522,17 @@
     const games = [
       {
         title: "Echo's of the Dark",
-        description: "A first-person narrative-driven game set in a mysterious, abandoned asylum.",
+        description: "A first-person narrative-driven game set in a mysterious, abandoned asylum. It's Available in Epic Store.",
         cover: "assets/Part 1.png",
-        epicUrl: "https://store.epicgames.com/en-US/p/echos-of-the-dark-e56c0f",
         media: [
           { type: "video", src: "assets/Echo's of the Dark.mp4" },
           { type: "image", src: "assets/Part 1.png" }
         ]
       },
       {
-        title: "Echo's of the Dark Part 2 comming soon in Epic Game Store ",
-        description: "A first-person narrative-driven game set in a mysterious, abandoned asylum escape to Forest.",
+        title: "Echo's of the Dark Part 2",
+        description: "A first-person narrative-driven game set in a mysterious, abandoned asylum escape to Forest.It's Available in Steam. ",
         cover: "assets/Echo's of the Dark Part 2.png",
-        epicUrl: "https://store.epicgames.com/",
         media: [
           { type: "image", src: "assets/Echo's of the Dark Part 2.png" }
         ]
@@ -636,17 +615,6 @@
                   <path d="M12 5L19 12L12 19" stroke="black" stroke-width="2" stroke-linecap="round"></path>
                 </svg>
               </span>
-
-              <a
-                href="${game.epicUrl}"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center justify-center px-4 py-2 text-sm font-bold text-white rounded-lg shadow-lg"
-                style="background:linear-gradient(135deg,#3b82f6,#6366f1); box-shadow:0 0 12px rgba(99,102,241,.4);"
-                onclick="event.stopPropagation();"
-              >
-                Explore
-              </a>
             </div>
           </div>
         `;
